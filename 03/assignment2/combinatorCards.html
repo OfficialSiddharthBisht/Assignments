@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS COMBINATORS CARDS</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+        *{
+            font-family: 'Open Sans', sans-serif;
+            background-color: whitesmoke;
+        }
+        .container{
+            height: 90vh;
+            margin: 20px;
+            /* border: 2px solid red; */
+        }
+        .container > div{
+            display: flex;
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid blue; */
+        }
+        .container > div > div{
+            padding: 30px;
+            height: 100%;
+            width:33%;
+            margin-bottom: 300px;
+            /* border:2px solid saddlebrown */
+        }
+        div  img{
+            margin: auto;
+            width: 100%;
+            height: 50%;
+        }
+        div > p{
+            font-variant: small-caps;
+            color: rgb(83, 81, 81);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+                <h2>UK and US join forces to strike back in cyber-space</h2>
+                <p>Technology</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+                <h2>Lady Gaga took personal trauma into Gucci role</h2>
+                <p>Entertainment & Arts</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+                <h2>The mothers using Instagram to offer advice to new mums</h2>
+                <p>Business</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+               <h2> 'I've seen irreversible change but hope too for planet'</h2> 
+               <p>Science & Environment</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+                <h2>Full force of Covid hitting Germany, warns Merkel</h2>
+                <p>Europe</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/350x250">
+                <h2>Baby elephant dies after losing half its trunk</h2>
+                <p>Asia</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

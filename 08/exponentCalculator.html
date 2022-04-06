@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent Calculator</title>
+</head>
+<style>
+    *{
+        text-align: center;
+        font-family: monospace;
+        font-size: larger;
+    }
+
+</style>
+<body>
+    <h3>Product</h3>
+    <label>Enter First number: </label>
+    <input id ="firstNum" type="number">
+    <label>Enter the second number: </label>
+    <input id = "secondNum"type="number">
+    <button onclick="findProduct()">Find Product</button>
+    <hr>
+    <br>
+    <hr>
+    <h3>Exponent</h3>
+    <label>Enter First number: </label>
+    <input id ="first" type="number">
+    <label>Enter the second number: </label>
+    <input id = "second"type="number">
+    <button onclick="findExponent()">Find Exponent</button>
+    <p id = "para">
+        
+    </p>
+    <script>
+        function findProduct(){
+            let a = document.getElementById("firstNum").value;
+            let b = document.getElementById("secondNum").value;
+            alert(a * b);
+        }
+        function findExponent(){
+            const num1 = document.getElementById("first").value;
+            const num2 = document.getElementById("second").value;
+            const para = document.getElementById("para");
+            let i = 1;
+            let ans = num1;
+            while(i < num2){
+                ans *= num1;
+                i++;
+            }
+        para.innerText = ans;     
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Continent</title>
+</head>
+<style>
+    *{
+        text-align: center;
+        background-color:gainsboro;
+        font-size: large;
+    }
+</style>
+<body>
+    <select id = "continent_select">
+        <option value = "India"> India </option>
+        <option value = "United States"> United States </option>
+        <option value = "China"> China </option>
+        <option value = "Nepal"> Nepal </option>	
+        <option value = "Austrlia"> Austrlia </option>
+        <option value = "France"> France </option>
+        <option value = "Germany"> Germany </option>
+        <option value = "South Africa"> South Africa </option>
+        <option value = "Nigeria"> Nigeria </option>
+        <option value = "Maxico"> Maxico </option>
+        <option value = "Argentina"> Argentina </option>
+        <option value = "Brazil"> Brazil </option>
+        <option value = "Canada"> Canada </option>
+        <option value = "Singapore"> Singapore </option>
+        <option value = "Sweden"> Sweden </option>
+    </select>
+    <button onclick="findContinent()">Find Continent</button>
+    <script>
+        function getCountryName(){
+            let selectedValue = document.getElementById("continent_select").value;
+            return (selectedValue);
+        }
+        let str = "The continent is ";
+        function findContinent(){
+            let country = getCountryName();
+            switch(country){
+                case "India": 
+                case "Nepal":
+                case "China":
+                case "Singapore":
+                    alert(str + "Asia");
+                    break;
+                case "Austrlia":
+                    alert(str + "Oceania");
+                    break;
+                case "Sweden":
+                case "South Africa":
+                case "Nigeria":
+                    alert(str + "Africa")
+                    break;
+                case "Canada":
+                    alert(str + "Central America");
+                    break;
+                case "France":
+                case "Germany":
+                    alert(str + "Europe");
+                    break;
+                case "Maxico":
+                case "United States":
+                    alert(str + "North America")
+                    break;
+                case "Argentina":
+                case "Brazil":
+                    alert(str + "South America");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Evalutaion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+      * {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+      p{
+        color: rgb(114, 114, 114);
+      }
+      .container{
+          background-color: white;
+      }
+      .top-section {
+        background-color: white;
+        display: flex;
+        height: 300px;
+        margin-bottom: 30px;
+      }
+      .top-section > div {
+        margin: auto;
+        height: 100%;
+        margin-bottom: 200px;
+      }
+      .top-section > div *{
+          display:block;
+      }
+      .top-section > div > h3{
+        color: rgb(161, 159, 159);
+      }
+      .bottom-section{
+          margin-top: 20px;
+          display: grid;
+          padding: 1%;
+          gap :5px;
+          grid-template-columns: repeat(4,1fr);
+          background-color: rgb(156, 200, 214);
+          height: 500px;
+      }
+      .bottom-section > div{
+          background-color: white;
+          /* border: 2px solid blueviolet; */
+      }
+      .bottom-section > div > img{
+          border-radius: 50%;
+      }
+      .top-section > div > img{
+            margin: auto;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+      h1{
+        margin: 50px;
+      }
+      @media all and (max-width : 620px) and (min-width:300px){
+        .bottom-section{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .top-section{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1 , 1fr);
+            gap: 15%;
+            margin: 10px;
+        }
+      }
+      @media all and (max-width : 300px){
+        .bottom-section{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .top-section{
+            display:inline-block;
+        }
+        .top-section > div > img{
+            margin: auto;
+            /* width: 100%; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Blog Posts</h1>
+      <div class="top-section">
+        <div>
+          <img src="https://via.placeholder.com/350X250"/>
+          <h4>29 Jan 2019</h4>
+          <h3>Some Random Text</h3>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350X250"/>
+          <h4>29 Jan 2019</h4>
+          <h3>Some Random Text</h3>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/350X250"/>
+          <h4>29 Jan 2019</h4>
+          <h3>Some Random Text</h3>
+        </div>
+      </div>
+      <div class="bottom-section">
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+              <img src="https://via.placeholder.com/150" alt="">
+              <h3>Some Random Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

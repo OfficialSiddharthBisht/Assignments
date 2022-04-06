@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratagic Investors Using Grid</title>
+</head>
+<style>
+    .container{
+        margin: 10%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 250px 250px;
+        gap: 4%;
+    }
+    .container > div{
+        border: 2px solid red;
+    }
+    .container > div > img{
+        height: 80%;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="person1">
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg">
+        </div>
+        <div class="person2"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"></div>
+        <div class="person3"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"></div>
+        <div class="person4"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"></div>
+        <div class="person5"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg"></div>
+        <div class="person6"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png"></div>
+        <div class="person7"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png"></div>
+        <div class="person8"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg"></div>
+    </div>
+</body>
+</html>

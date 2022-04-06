@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Counter</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: antiquewhite;
+        font-family: cursive;
+        font-size: x-large;
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-size:large;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+    h1{
+        background-color: whitesmoke;
+        margin: auto;
+        margin-top: 250px;
+        width: 50%;
+        padding: 30px;
+        border: 5px solid gainsboro;
+    }
+</style>
+<body>
+    <h1>  </h1>
+    <button onclick="increment()"> Increase </button>
+    <button onclick="decrement()"> Decrease </button>
+</body>
+<script>
+    var i;
+    let num = document.querySelector("h1");
+    if(localStorage.getItem('i') == null){
+        i = 0;
+    }else{
+        i = localStorage.getItem('i');
+    }
+    num.innerHTML = i;
+    function increment(){
+        num.innerHTML = ++i ;
+        localStorage.setItem('i',i);
+    }
+    function decrement(){
+        num.innerHTML = --i;
+        localStorage.setItem('i',i);
+    }
+</script>
+</html>

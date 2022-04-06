@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Age Validator</title>
+</head>
+<style>
+    *{
+        text-align: center;
+        background-color: thistle;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button{
+        background-color: burlywood;
+        font-size: large;
+        color: crimson;
+    }
+</style>
+<body>
+    <h2>Marriage Age Validator</h2>
+    <label>Gender</label>
+    <select name="gender" id="gender">
+        <option value= null>select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <label >Year Of Birth</label>
+    <input id ="date" type="number">
+    <button id = "submit">Submit</button>
+ <script>
+     function getSelectedValue(){
+    let selectedValue = document.getElementById("gender").value;
+    return (selectedValue);
+}
+
+let currentYear = new Date().getFullYear();
+let date = document.getElementById("date");
+let btn = document.getElementById("submit");
+btn.addEventListener('click',display =>{
+  let gender = getSelectedValue();
+  date = parseInt(date.value);
+   let age = currentYear - date;
+//    console.log(gender , age , currentYear , date);
+if(gender == "male" && age >= 21){
+    alert("Your are eligible for marriage");
+}else if(gender == "female" && age >= 18){
+    alert("You are eligible for mariiage");
+}else{
+    alert("You are not eligible")
+}
+})
+ </script>
+</body>
+</html>

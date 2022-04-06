@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap');
+
+*{
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+}
+.navbar{
+    background-color: rgb(88, 211, 127);
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+.navbar div a{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}

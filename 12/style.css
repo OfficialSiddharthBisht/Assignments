@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+}
+.navbar{
+    font-size: 25px;
+    background-color: beige;
+    padding: 25px;
+}
+.navbar *{
+    margin: 50px;
+    padding: 35px;
+    font-family: monospace;
+    text-decoration: none;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: cornsilk;
+}
+#box{
+    margin: 8px;
+    border: 2px solid gray;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">HomePage</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="cart.html">Cart</a>
+    </div>
+    <h1>Women's Products</h1>
+    <div id="container">
+
+    </div>
+</body>
+<!-- * Data for the men category -->
+<script src="data.js"></script>
+<script>
+    let dataInCart;
+    if(localStorage.getItem('dataInCart') === null){
+        dataInCart = [];
+    }else{
+        dataInCart = JSON.parse(localStorage.getItem('dataInCart'));
+    }
+    mensData.forEach(product => {
+        let box = document.createElement("div");
+        box.setAttribute('id','box');
+        let image = document.createElement("img");
+        let productName = document.createElement("h4");
+        let price = document.createElement("h3");
+        let cartBtn = document.createElement("button");
+        cartBtn.innerText = "Add To Cart"
+        productName.innerText = product.name;
+        price.innerText = "RS "+ product.price;
+        image.src = product.image_url;
+        box.append(image,productName,price);
+        box.append(cartBtn);
+        cartBtn.addEventListener('click',()=>{
+            dataInCart.push(product);
+            console.log(dataInCart);
+            localStorage.setItem('dataInCart',JSON.stringify(dataInCart));     
+        })
+        document.querySelector("#container").append(box);
+});
+</script>
+</html>

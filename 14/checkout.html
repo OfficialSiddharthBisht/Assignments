@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut Page</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        form{
+            margin: auto;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        form *{
+            margin: 20px;
+            padding: 5px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Page</h1>
+    <div class="card-detail-container">
+        <form>
+            <label for="card-select">Select Your Card Type :- </label>
+            <select name="card" id="card-select">
+                <option value="">--Please choose an option--</option>
+                <option value="credit-cart-master">Credit Master Card</option>
+                <option value="credit-rupay-card">Credit Rupay Card</option>
+                <option value="debit-card-master">Debit Card Master</option>
+                <option value="debit-card-rupay">Debit Card Rupay</option>
+            </select>
+            <input id="cardNumber" type="number" placeholder="Enter your card number">
+            <input id="cvv" type="number" placeholder="Enter your CVV">
+            <input id="expiry" type="date" placeholder="Expiry Date">
+            <input id="cardholder" type="text" placeholder="Enter your name">
+            <input type="submit" value="Send OTP">
+        </form>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>
